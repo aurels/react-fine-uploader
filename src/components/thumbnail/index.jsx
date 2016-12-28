@@ -2,11 +2,11 @@ import React, { Component, PropTypes } from 'react'
 
 import Placeholder from './placeholder'
 
-import './thumbnail.css'
+// import './thumbnail.css'
 import NotAvailablePlaceholder from './not-available-placeholder'
 import WaitingPlaceholder from './waiting-placeholder'
 
-export const defaultMaxSize = 120 
+export const defaultMaxSize = 120
 export const notAvailableStatus = 'not-available'
 export const waitingStatus = 'waiting'
 
@@ -79,7 +79,7 @@ class Thumbnail extends Component {
             const notAvailableImage = (
                 <NotAvailablePlaceholder maxSize={ this.props.maxSize } />
             )
-            
+
             return (
                 <Placeholder className={ `react-fine-uploader-thumbnail ${this.props.className || ''}` }
                              image={ this.props.notAvailablePlaceholder || notAvailableImage }
